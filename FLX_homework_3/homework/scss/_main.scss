@@ -1,0 +1,224 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font: $Font_Style;
+    background: $Main_Background;
+}
+
+a, h1, h3, h4, button {
+    text-transform: uppercase;
+}
+
+header {
+    background: $Header_Back_Image;
+    background-size: cover;
+    height: 780px;
+    color: $H_Button_A_Color;
+    a {
+        text-decoration: none;
+        color: #ffffff;
+    }
+
+    .top-wrapper {
+        display: flex;
+        justify-content: space-between;
+
+        nav {
+
+            a {
+				display: inline-block;
+                margin-right: -7px;
+                padding: 15px 0;
+                width: 280px;
+                text-align: center;
+                color: $H_Button_A_Color;
+                border-right: $A_Header_Border;
+
+                &:hover {
+                    background: $Nav_Hover;
+                }
+                &:last-child {
+                    border: none;
+                }
+            }
+        }
+    }
+
+    section {
+        margin-top: 200px;
+        text-align: center;
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        a {
+            background: $Buttons_Color;
+            padding: 15px 60px;
+            font-size: 12px;
+
+            &:hover {
+                background: $Button_Hover;
+            }
+        }
+    }
+    
+    .logo {
+        img {
+            width: 230px;
+            height: 150px;
+        }
+    }
+}
+main {
+    margin: 0 auto;
+    width: 960px;
+    padding: 0;
+    color: $Article_Text_Color;
+
+    .toolbar {
+        text-align: right;
+        margin: 15px 10px;
+
+        input {
+            text-indent: 10px;
+            padding: 10px;
+            border: $Article_Border;
+            background: $Main_Background;
+        }
+    }
+}
+.post-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    h1 {
+        text-align: right;
+        width: 100%;
+    }
+
+    article {
+        display: flex;
+        width: inherit ;
+        padding: 10px;
+        background: $Article_Back_Color;
+        margin-bottom: 20px;
+
+        img {
+            height: 250px;
+        }
+
+        div {
+            padding: 0 5px;
+
+            .post-description {
+                padding: 10px 5px;
+                font-size: 12px;
+                color: $Article_Descr_Color;
+            }
+            h3 {
+                color: $Article_H_Color;
+                border-top: $Article_Border;
+                padding: 5px 0;
+            }
+
+            p {
+                line-height: 1.4;
+            }
+
+            .btn {
+                float: right;
+                margin: 20px 10px;
+                padding: 10px 70px;
+                background: $Buttons_Color;
+                border: transparent;
+                color: #ffffff;
+
+                &:hover {
+                    background: $Button_Hover;
+                }
+            }
+        }
+    }
+}
+
+section.about {
+    width: 940px;
+    margin: 50px auto;
+
+    h1 {
+        text-align: right;
+    }
+
+    p {
+        margin-bottom: 20px;
+        line-height: 1.4;
+    }
+
+    div img {
+        width: 100%;
+    }
+}
+
+section.contact-form {
+
+    h1, h4 {
+        text-align: right;
+        color: $Article_Text_Color;
+    }
+
+    form {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        color: $Article_H_Color;
+        margin-top: 20px;
+
+        label {
+            text-align: right;
+
+            &:nth-child(3) {
+                margin-top: 20px;
+            }
+        }
+
+        input {
+            width: 475px;
+            display: block;
+            border: $Article_Border;
+            padding: 10px 0;
+            background: $Main_Background;
+        }
+
+        textarea {
+            width: 960px;
+            height: 120px;
+            border: $Article_Border;
+            background: $Main_Background;
+        }
+        
+        button {
+            margin-left: 760px;
+            margin-top: 20px;
+            width: 200px;
+            padding: 10px 0;
+            background: $Buttons_Color;
+            border: transparent;
+            color: #ffffff;
+
+            &:hover {
+                background: $Button_Hover;
+            }
+        }
+    }
+}
+footer {
+    color: $Article_Text_Color;
+    font-size: 12px;
+    margin: 10px;
+}
