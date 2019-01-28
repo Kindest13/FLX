@@ -1,0 +1,278 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+body {
+    font-family: 'Open Sans', sans-serif;
+	min-width: 900px;
+    margin: 0 auto;
+	font-size: 11px;
+	background: #F3F3F3;
+  }
+header {
+    height: 550px;
+    background: url("../img/sample2.jpg") center center;
+    background-size: cover;
+	color: #ffffff;
+	position: relative;
+}
+header::after {
+	position: absolute;
+	content: "";
+	top: 549px;
+	border-top: 150px solid #000000;
+	border-left: 100vw solid transparent;
+}
+
+span.label {
+    letter-spacing: 2px;
+}
+
+header .top-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px 40px;
+}
+header .title {
+    margin-top: 110px;
+    text-align: center;
+}
+.title h1 {
+	letter-spacing: 5px;
+	text-transform: uppercase;
+	font-size: 3em;
+	font-weight: normal;
+}
+.title h1 span {
+    font-size: 1.8em;
+}
+.navig nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 150px;
+}
+
+.navig nav a {
+    display: inline-block;
+    padding: 10px 60px;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    text-decoration: none;
+    background: rgba(0,0,0,0.5);
+}
+.par {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+.par p:first-child {
+	align-self: flex-end;
+	position: relative;
+    width: 45%;
+    text-align: left;
+	z-index: 5;
+	margin: 70px 20px;
+}
+.par p:nth-child(2) {
+	position: relative;
+	color: #000000;
+	font-size: 15px;
+    width: 320px;
+    text-align: left;
+	z-index: 5;
+	top: -50px;
+	margin: 20px 50px;
+}
+.strong {
+	font-weight: bold;
+}
+.title p {
+    text-align: center;
+    display: inline;
+}
+.regist a{
+    display: inline-block;
+    padding: 0 20px;
+    color: #ffffff;
+    text-decoration: none;
+}
+.articles {
+	margin-top: 150px;
+}
+h2 {
+	font-weight: normal;
+}
+.h2read{
+	font-weight: normal;
+	font-size: 1.5em;
+	text-align: center;
+	margin: 10px 0;
+}
+article {
+	margin: 30px 50px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+article .p3 {
+	width: 40%;
+}
+.p3 p {
+	padding: 1.5vw 0;
+	text-align: center;
+}
+article button:hover {
+	background: #FFC0CB;
+	border: 2px solid #229;
+}
+.image {
+    position: relative;
+	width: 50%;
+}
+
+.image img {
+	width: 100%;
+	height: 18vw;
+}
+.image button {
+	color: #ffffff;
+	padding: 5px 10px;
+	top: 20px;
+	right: 20px;
+	position: absolute;
+	border: 2px solid #ffffff;
+	background: rgba(0,0,0,0.5);
+}
+article h3 {
+	color: #ffffff;
+	bottom: 20px;
+	left: 20px;
+	font-weight: normal;
+	position: absolute;
+}
+.explores {
+	display: flex;
+	padding: 30px;
+	padding-bottom: 60px;
+	justify-content: space-around;
+	background: #ffffff;
+	margin-top: 50px;
+}
+.explore {
+	width: 20%;
+	padding: 20px;
+	box-shadow: 0 3px 5px rgba(0,0,0,0.5);
+}
+.btn {
+	margin-top: 10px;
+	font-weight: 700;
+	width: 100%;
+	padding: 5px 0;
+	background: #097774;
+	color: #ffffff;
+	border: transparent;
+}
+.btn:hover {
+	background: #991991;
+}
+
+.subs_form {
+	display: flex;
+	justify-content: flex-end;
+	flex-wrap: wrap;
+	margin: 15px;
+	padding: 40px 10px;
+}
+.subs_form p {
+	margin-bottom: 10px;
+}
+form {
+	display: flex;
+}
+form input {
+	font-size: 1em;
+}
+input[type="submit"] {
+	background: #097774;
+	color: #FFF;
+	padding: 5px;
+	width: 60px;
+	border: none;
+	margin-left: 5px;
+}
+input[type="submit"]:hover {
+	background: #229;
+}
+input[type="email"] {
+	background: #F3F3F3;
+	margin-left: 10px;
+	padding: 5px;
+	width: 120px;
+	border: 1px solid #000;
+}
+::placeholder {
+	color: #000;
+}
+
+.about {
+	display: flex;
+	justify-content: space-around;
+	padding: 80px 0;
+	border-bottom: 2px solid #F3F3F3;
+}
+.tweet {
+	font-style: italic;
+}
+.info, .contact, .tweet, .newsl {
+	width: 20%;
+}
+footer input[type="submit"], footer input[type="email"] {
+	padding: 5px;
+	margin: 0;
+	margin-top: 5px;
+}
+footer input[type="submit"] {
+	width: auto;
+	margin-left: 5px;
+}
+input[type="submit"]:active {
+	background: #551;
+}
+footer input[type="email"] {
+	overflow: hidden;
+	width: 120px;
+}
+footer {
+	font-size: 1em;
+	background: #ffffff;
+}
+footer h4 {
+	font-size: 1.2em;
+	margin-bottom: 10px;
+}
+footer nav a{
+	text-decoration: none;
+	color: #000;
+	margin-left: 10px;
+}
+footer nav a:hover {
+	background: #991;
+	padding: 10px;
+}
+.about p, footer span, a{
+	color: #9E9E9E;
+	text-decoration: none;
+}
+p.time {
+	font-size: 1em;
+	font-style: normal;
+	color: #E8E8E8;
+}
+.footer-nav {
+	display: flex;
+	justify-content: space-between;
+	margin: 10px 30px;
+}
