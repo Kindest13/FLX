@@ -1,0 +1,311 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  width: 75%;
+  margin: 0 auto;
+  background: #0b192f;
+  color: #fff;
+}
+a {
+  color: #fff;
+}
+img {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+}
+.post-1 {
+  background: #B71757;
+}
+.post-2 {
+	background: #0D7E71;
+}
+.post-3 {
+	background: #b1660e;
+}
+.post-4 {
+	background: #d12767;
+}
+.post-5 {
+	background: #2d95bb;
+}
+header,aside,main,footer {
+  flex: 1 100%;
+}
+.wrapper {
+  display: flex;  
+  flex-flow: row wrap;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: tomato;
+  margin-bottom: 1.5vw;
+  background: #162b4d;
+  padding: 0 3%;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+}
+nav a {
+  padding: 2vw 2vw;
+}
+nav a:hover {
+  background: #b8b8b8;
+}
+header p a {
+  font-size: 3vw;
+  font-weight: 200;
+}
+header p a .pink {
+  color: #d12767;
+}
+article .text {
+  padding: 2vw 2vw;
+  width: 22vw;
+}
+article.last .text  {
+  width: 50vw;
+}
+article p {
+  opacity: 0.5;
+  line-height: 1.5;
+}
+article .date {
+  opacity: 0.3;
+}
+article .text p.date {
+  line-height: 1.3;
+}
+.date {
+  position: absolute;
+  font-weight: 200;
+  font-size: 1.5vw;
+  top: 1vw;
+  right: 0.4vw;
+}
+h2 {
+  font-weight: 300;
+  margin-bottom: 5%;
+}
+article .text h1 {
+  font-size: 3vw;
+  color: #fff;
+  font-weight: 200;
+  margin-bottom: 3%;
+}
+.date .big {
+  font-size: 3vw;
+}
+.articles article:nth-child(even) .date {
+  right: 23vw;
+}
+.articles article:nth-child(even) .text {
+  margin-left: 5vw; 
+}
+.text {
+  padding: 2vw;
+  font-size: 1vw;
+}
+footer {
+  display: flex;
+  font-size: 1vw;
+  justify-content: space-between;
+  padding: 2vw;
+  background: #162b4d;
+  order: 3;
+  margin: 1.5vw 0 0.5vw 0;
+}
+footer span {
+  width: 17%;
+}
+main {
+  flex: 3 0 0;
+  order: 1;
+  margin-right: 1.5vw;
+}
+article {
+  display: flex;
+}
+.articles article:nth-child(even) {
+  text-align: right;
+  flex-direction: row-reverse;
+}
+article img {
+  width: 50%;
+  height: 23vw;
+}
+article img:hover {
+  filter: opacity(0.5);
+}
+article .descr {
+  justify-content: end;
+  width: 100%;
+  position: relative;
+}
+article .descr:hover {
+  filter: opacity(0.7);
+}
+.aside { 
+  flex: 1 0 0;
+  order: 2;
+  color: #000;
+}
+.aside .news {
+  background: #fff;
+  margin-bottom: 1.5vw;
+}
+header a.menu-button {
+  display: none;
+}
+footer p, footer span {
+  opacity: 0.3;
+}
+
+
+@media only screen and (max-width: 768px) {
+  main {
+    flex: 2 0 0;
+    order: 1;
+    margin-right: 1.5vw;
+  }
+  body {
+    width: 100%;
+  }
+  .wrapper {
+    margin: 0 2%;
+  }
+  .articles article, .articles article:nth-child(even) {
+    flex-direction: column;
+    text-align: start;
+  }
+  article img, article .text {
+    width: 100%;
+    height: 50vw;
+  }
+  article .text, article.last .text {
+    font-size: 2vw;
+    width: 63vw;
+    padding: 5% 10%;
+    line-height: 1.5;
+  }
+  article .text h1 {
+    font-size: 6vw;
+  }
+  .date {
+    font-size: 3vw;
+    top: 35vw;
+    right: 33vw;
+  }
+  .date .big {
+    font-size: 6vw;
+  }
+  .articles article:nth-child(even) .date {
+    right: 33vw;
+  }
+  .last .text .date {
+    top: 35vw;
+  }
+  footer {
+    flex-direction: column;
+    justify-content: start;
+    text-align: center;
+    align-items: center;
+    height: 20vw;
+    font-size: 2vw;
+    padding: 3vw;
+    line-height: 1.5;
+  }
+  footer p, footer span {
+    opacity: 0.3;
+  }
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 20vw;
+  }
+  header p a {
+    font-size: 4vw;
+  }
+  header a.menu-button {
+    display: inline;
+  }
+  header a.menu-button i {
+    font-size: 2vw;
+  }
+  header nav {
+    display: none;
+  }
+
+}
+
+
+@media only screen and (max-width: 480px) {
+  .aside { 
+    flex: inherit;
+  }
+  nav a {
+    font-size: 2vw;
+  }
+  header p a {
+    font-size: 4vw;
+  }
+  .aside .news {
+    margin-bottom: 3%;
+  }
+  main {
+    margin-right: 0;
+  }
+  article {
+    width: 98vw;
+  }
+  .wrapper {
+    margin-right: 0;
+  }
+  article img, article .text {
+    height: 75vw;
+    width: 100%;
+  }
+  article .text, article.last .text, .aside .news .text {
+    font-size: 3vw;
+    width: 95vw;
+    padding: 5% 7%;
+    line-height: 1.5;
+  }
+  article .text h1 {
+    font-size: 10vw;
+  }
+  .date {
+    font-size: 5vw;
+    top: 55vw;
+    right: 47vw;
+  }
+  .date .big {
+    font-size: 8vw;
+  }
+  .articles article:nth-child(even) .date {
+    right: 47vw;
+  }
+  .last .text .date {
+    top: 53vw;
+  }
+  .aside .news .text, footer {
+    height: 35vw;
+  }
+  .aside .news .text h2 {
+    margin-bottom: 2%;
+  }
+  footer {
+    font-size: 2.5vw;
+    padding-top: 7%;
+  }
+}
