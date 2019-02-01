@@ -22,7 +22,6 @@ module.exports = {
         "no-undef-init": "error",
         "block-spacing": "error",
         "brace-style": "error",
-        "no-console": 0,
         "max-len": ["error", { "code": 120, "ignoreComments": true }],
         "new-parens": "error",
         "no-nested-ternary": "error",

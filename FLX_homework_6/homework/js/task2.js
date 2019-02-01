@@ -11,7 +11,7 @@ Saved: ${rounding(saved)}$`;
 } else {
     output = "Invalid input data";
 }
-console.log(output);
+alert(output);
 
 function rounding(num) {
     return Math.round(num * 100) / 100;
